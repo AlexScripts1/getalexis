@@ -1,153 +1,243 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>getalexis</title>
-<style>
-body {
-background-color: #2f2f2f; /* darker theme */
-font-family: 'Montserrat', monospace;
-margin: 0;
-padding: 0;
-}
- 
-.container {
-max-width: 800px;
-margin: 40px auto;
-text-align: center;
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>getalexis - Official</title>
+<!--     <meta name="description" content="We make stuff whenever we want for you guys to use if we are not lazy."> -->
+    <link rel="icon" type="image/png" href="logo1.png" />
 
-.title {
-font-size: 48px;
-color: #ffffff;
-margin-bottom: 10px;
-font-weight: bold;
-text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
+    <meta property="og:title" content="getalexis - Official">
+    <meta property="og:description" content="We make stuff whenever we want for you guys to use if we are not lazy.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://getalexis.vercel.app">
+    <meta property="og:image" content="https://ibb.co/qJ67VHn">
+    <meta property="og:image:width" content="1920">
+    <meta property="og:image:height" content="1080">
 
-.tagline {
-font-size: 24px;
-color: #aaaaaa;
-margin-bottom: 20px;
-text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
+<!--     For Twitter why you ask idk its just that i want that cool thumbnail when you send our website url link -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="getalexis - Official">
+    <meta name="twitter:description" content="We make stuff whenever we want for you guys to use if we are not lazy.">
+    <meta name="twitter:image" content="https://ibb.co/qJ67VHn">
 
-.terminal-container {
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-.terminal-window {
-background-color: #333333;
-padding: 20px;
-border-radius: 10px;
-margin-bottom: 20px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.code {
-font-size: 16px;
-color: #cccccc;
-padding: 10px;
-}
-
-.navbar {
-background-color: #551a8b; /* purple background */
-padding: 10px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.nav-icon {
-font-size: 24px;
-color: #000000;
-margin: 0 10px;
-}
-
-.nav-text {
-font-size: 18px;
-color: #aaaaaa;
-margin: 0 10px;
-}
-  
-  button {
-width: 109px;
-height: 50px;
-background-color: #551a8b;
-border: none;
-border-radius: 0%;
-cursor: pointer;
-transition: background-color 0.2s ease;
-
-/* Add some animations to make it more engaging */
-.terminal-window {
-transition: all 0.3s ease-in-out;
-}
-
-.terminal-window:hover {
-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-}
-
-.navbar {
-transition: all 0.3s ease-in-out;
-}
-
-.navbar:hover {
-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-}
-
-/* Add some responsive design to make it look good on mobile */
-@media only screen and (max-width: 600px) {
-.container {
-width: 90%;
-}
-.terminal-window {
-width: 100%;
-}
-.navbar {
-flex-direction: column;
-align-items: center;
-}
-}
-</style>
+    <meta name="theme-color" content="#1058e9">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<div class="container">
-<h1 class="title">ALEXIS</h1>
-<p class="tagline">The Best Executer That Uses ForlornApi & CloudyApi.</p>
-<div class="terminal-container">
-<div class="terminal-window">
-<img src="https://cdn.discordapp.com/attachments/1196052078750076939/1311271945244770304/image-22.png?ex=674840aa&is=6746ef2a&hm=46746d39ef1c581437b5712b568c6e05258be031499f3250572e3d090952727f&" />
+    
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="/">
+            <img src="logo1.png" alt="Logo" class="nav-logo" />
+            <span class="brand-text">getalexis - Offical</span>
+        </a>        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#developers">Developers</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="content-section">
+        <div class="container text-center">
+            <img src="logo1.png" alt="Logo" class="glowing-logo" />
+            <h1>Alexis Executer</h1>
+            <p>We created a executer that is better.</p>
+            <a href="#" class="btn btn-primary mt-4">Download</a>
+        </div>
+    </section>
+
+    <!-- Suppose to be a Features sections from TMRX website but changed it into Service for our website -->
+<section id="features" class="feature-section">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2>Services</h2>
+            <p>Service we will be giving if you want to hire us.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="fas fa-bolt feature-icon"></i>
+                    <h3>API</h3>
+                    <p>ForlornApi And Cloudyapi.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="fas fa-lock feature-icon"></i>
+                    <h3>UI</h3>
+                    <p>We maked the ui pretty good..</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="fas fa-user-friends feature-icon"></i>
+                    <h3>Community</h3>
+                    <p>We got good community even though our discord server is dead.</p>
+                </div>
+            </div>
+
+<!--             <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="fas fa-chart-line feature-icon"></i>
+                    <h3>Title</h3>
+                    <p>Description.</p>
+                </div>
+            </div> -->
+
+
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="fas fa-mobile-alt feature-icon"></i>
+                    <h3>Laptop/pc Friendly</h3>
+                    <p>Alexis Executer are laptop/pc friendly so good for you laptop/pc people.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--  Showcase Secionn (if you uncomment this please uncomment the showcase css style code in styles.css because it will look goddamn ugly)
+    <section class="showcase-section">
+        <div class="container">
+            <h1 class="text-center">Showcase</h1>
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <h2>BRother</h2>
+                    <video class="showcase-video" autoplay muted loop playsinline>
+                        <source src="#" type="video/mp4" controls loading="lazy">
+                        Your browser does not support the video tag.
+                    </video>
+
+                   <img src="#" alt="Showcase" class="showcase-image" loading="lazy">
+                </div>
+                <div class="col-md-6 text-center">
+                    <h2>Cube Hub</h2>
+                    <video class="showcase-video" autoplay muted loop playsinline>
+                        <source src="zekrom.mp4" type="video/mp4" controls loading="lazy">
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <img src="#" alt="Zekrom Showcase" class="showcase-image" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section> 
+-->
+
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2>FAQ</h2>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What is Alexis Executer?</h3>
+                    <i class="fa fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Alexis Executer is a roblox executer that is good.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What is the feature??</h3>
+                    <i class="fa fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>open file , save file , settings , scripthub and more
+                        .</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How to get Alexis Executer?</h3>
+                    <i class="fa fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>You can get Alexis Executer by clicking the 'Download' button at the top of this page.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Is Alexis Executer safe to use?</h3>
+                    <i class="fa fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, Alexis executer is safe and trusted.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AF Developers -->
+<section id="developers" class="developers-section">
+    <div class="container">
+        <h2 class="text-center mb-5">Developers</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-3 col-sm-6">
+                <div class="developer-card" onclick="Dev_Details('dev1')">
+                    <img src="https://cdn.discordapp.com/attachments/1247208870917574766/1313842703242362942/static_2.png?ex=67519ade&is=6750495e&hm=bf49af318a954300d9f45fce82d93256cb7212ee7757b907543bc286af58f09f&" class="developer-photo">
+                    <h4 class="developer-name">notalex77</h4>
+                    <p class="developer-role">Owner</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="developer-card" onclick="Dev_Details('dev2')">
+                    <img src="https://cdn.discordapp.com/attachments/1247208870917574766/1313843544657760348/static_3.png?ex=67519ba7&is=67504a27&hm=f83f774e26704d9a2c20cb3a9cfd40d6d8f1c63ff0c28e93657efeffa87cd77e&" class="developer-photo">
+                    <h4 class="developer-name">itsyourjosh</h4>
+                    <p class="developer-role">Developer</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="developerModal" class="developer-modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <div id="developer-details"></div>
+    </div>
 </div>
-</div>
-<div class="navbar">
-<button class="nav-icon" onclick="window.open('https://www.mediafire.com/file/rcwyx5ti1zbzy5m/Debug+(1).zip/file')">Download</button>
-<button class="nav-icon" onclick="window.open('https://discord.gg/aCf5Ar8gyV')">Discord</button>
-</div>
-</div>
-<p class="footer" style="text-align: center; font-size: 35px; color: #aaaaaa; margin-top: 20px;">What Is Alexis?</p>
-</div>
-<p class="footer" style="text-align: center; font-size: 20px; color: #aaaaaa; margin-top: 20px;">Alexis Is A Executer That uses apis.
-</div>
-<p class="footer" style="text-align: center; font-size: 35px; color: #aaaaaa; margin-top: 20px;">What API That uses alexis?</p>
-</div>
-<p class="footer" style="text-align: center; font-size: 20px; color: #aaaaaa; margin-top: 20px;">ForlornApi&CloudyApi.</p>
-</div>
-<p class="footer" style="text-align: center; font-size: 35px; color: #aaaaaa; margin-top: 20px;">What Alexis Executer Have?</p>
-</div>
-<p class="footer" style="text-align: center; font-size: 20px; color: #aaaaaa; margin-top: 20px;">ScriptHub, Settings, Save File, Open File.</p>
-</div>
-<p class="footer" style="text-align: center; font-size: 35px; color: #aaaaaa; margin-top: 20px;">When It Well Be release?</p>
-</div>
-<p class="footer" style="text-align: center; font-size: 20px; color: #aaaaaa; margin-top: 20px;">Its Already Release, if you want to download it click the download button.
-</div>
-<p class="footer" style="text-align: center; font-size: 35px; color: #aaaaaa; margin-top: 20px;">Do Alexis Have A virus or a rat?</p>
-</div>
-<p class="footer" style="text-align: center; font-size: 20px; color: #aaaaaa; margin-top: 20px;">No Alexis Executer Doesnt Have A Virus Or A Rat, and its safe.</p>
-</div>
+
+
+    <footer class="footer text-center">
+        <div class="container">
+            <p>© 2024 Alexis Executer</p>
+        </div>
+    </footer>
+
+    <div class="social-icons">
+        <a href="https://discord.gg/aCf5Ar8gyV" class="social-icon" target="_blank"><i class="fab fa-discord"></i></a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+            var navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) { 
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+    
+</body>
+</html>
