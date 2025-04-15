@@ -8,7 +8,7 @@ window.onscroll = function () {
 };
 
 document.querySelector('.btn-primary').addEventListener('click', function (e) {
-    window.location.href = "https://www.mediafire.com/file/nataz8wwqvl1vte/AlexisExecuterVersions.zip/file";
+    window.location.href = "https://pastebin.com/raw/1KwqDdaJ";
 });
 
 
