@@ -8,7 +8,7 @@ window.onscroll = function () {
 };
 
 document.querySelector('.btn-primary').addEventListener('click', function (e) {
-    window.location.href = "https://pastebin.com/raw/1KwqDdaJ";
+    window.location.href = "https://gofile.io/d/p4v1kv";
 });
 
 
